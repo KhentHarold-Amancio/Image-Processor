@@ -250,7 +250,7 @@ namespace Image_Processor
             ComputeHistogram(image);
             drawHistogram();
         }
-        
+
         //PROCESS BUTTON
         private void button1_Click(object sender, EventArgs e)
         {
@@ -308,6 +308,18 @@ namespace Image_Processor
                     MessageBox.Show($"Error saving image: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void greenScreenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dIPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+
+            form.Show();
         }
     }
 }

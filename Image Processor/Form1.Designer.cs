@@ -46,6 +46,7 @@
             label5 = new Label();
             pictureBox2 = new PictureBox();
             histogramPanel = new Panel();
+            dIPToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -119,7 +120,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, dIPToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1021, 24);
@@ -136,20 +137,20 @@
             // openToolStripMenuItem
             // 
             openToolStripMenuItem.Name = "openToolStripMenuItem";
-            openToolStripMenuItem.Size = new Size(103, 22);
+            openToolStripMenuItem.Size = new Size(180, 22);
             openToolStripMenuItem.Text = "Open";
             openToolStripMenuItem.Click += openToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(103, 22);
+            exitToolStripMenuItem.Size = new Size(180, 22);
             exitToolStripMenuItem.Text = "Save";
             // 
             // exitToolStripMenuItem1
             // 
             exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            exitToolStripMenuItem1.Size = new Size(103, 22);
+            exitToolStripMenuItem1.Size = new Size(180, 22);
             exitToolStripMenuItem1.Text = "Exit";
             exitToolStripMenuItem1.Click += exitToolStripMenuItem1_Click;
             // 
@@ -207,6 +208,13 @@
             histogramPanel.Size = new Size(256, 200);
             histogramPanel.TabIndex = 15;
             // 
+            // dIPToolStripMenuItem
+            // 
+            dIPToolStripMenuItem.Name = "dIPToolStripMenuItem";
+            dIPToolStripMenuItem.Size = new Size(37, 20);
+            dIPToolStripMenuItem.Text = "DIP";
+            dIPToolStripMenuItem.Click += dIPToolStripMenuItem_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -258,5 +266,6 @@
         private Label label5;
         private PictureBox pictureBox2;
         private Panel histogramPanel;
+        private ToolStripMenuItem dIPToolStripMenuItem;
     }
 }
