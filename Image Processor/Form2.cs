@@ -7,7 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
+using System.Drawing.Imaging;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Runtime.InteropServices;
 
 namespace Image_Processor
 {
@@ -19,6 +22,7 @@ namespace Image_Processor
         Bitmap image1;
         Bitmap image2;
         Bitmap resultImage;
+        bool isWebCamOn = false;
 
         public Form2()
         {
@@ -30,6 +34,7 @@ namespace Image_Processor
         {
 
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -107,5 +112,32 @@ namespace Image_Processor
 
             pictureBox2.Image = resultImage;
         }
-    }   
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if(isWebCamOn == false)
+            {
+                isWebCamOn = true;
+            }
+            else
+            {
+                isWebCamOn = false;
+            }
+
+            button4Status();
+        }
+
+        private void button4Status()
+        {
+            if(isWebCamOn == true)
+            {
+                button4.Text = "On";
+            }
+            else
+            {
+                button4.Text = "Off";
+            }
+
+        }
+    }
 }

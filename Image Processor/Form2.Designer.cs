@@ -139,6 +139,7 @@
             button4.TabIndex = 9;
             button4.Text = "Off";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // label4
             // 
